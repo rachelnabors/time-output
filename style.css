@@ -1,0 +1,13 @@
+.demonstrator {
+    width:10px; height: 10px;
+    background: orchid;
+    border-radius: 10px;
+    margin: 10px;
+    animation: demonstrationMotion infinite alternate 1s linear;
+  }
+  
+  @keyframes demonstrationMotion {
+    100% { transform: translateX(1000%) }
+  }
+  
+  body { padding: 10px;}

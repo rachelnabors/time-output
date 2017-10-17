@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time Out(put)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Timing Out(put)</h1>
+        <p>A tokenized timing system generator for people who design and develop with animations.</p>
+    </header>
+    
+    <label>Minimum duration</label> <input type="text" value="100" id="minimum-duration" />
+    
+    <select id="scale-selector">
+      <option value="1.06667">minor second</option>
+      <option value="1.125">major second</option>
+      <option value="1.2">minor third</option>
+      <option value="1.25">major third</option>
+      <option value="1.33">perfect fourth</option>
+      <option value="1.41421">augmented fourth or diminished fifth</option>
+      <option value="1.5" selected>perfect fifth</option>
+      <option value="1.6">minor sixth</option>
+      <option value="1.66667">major sixth</option>
+      <option value="1.77778">minor seventh
+      <option value="1.875">major seventh</option>
+      <option value="2">octave</option>
+      <option value="2.5">major tenth</option>
+      <option value="2.66667">major eleventh</option>
+      <option value="3">major twelfth</option>
+      <option value="4">double octave</option>
+    </select>
+    
+    <div class="demo">
+      <div class="demonstrator"></div>
+      <div class="demonstrator"></div>
+      <div class="demonstrator"></div>
+      <div class="demonstrator"></div>
+      <div class="demonstrator"></div>
+    </div>
+    
+    <table>
+      <thead>
+        <th scope="col" id="speed">Speed</th>
+        <th scope="col" id="duration">Duration</th>
+      </thead>
+      <tbody id="duration-chart"></tbody>
+    </table>
+    <div>
+        <h2>JSON format</h2>
+        <pre id="duration-json">
+        </pre>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
